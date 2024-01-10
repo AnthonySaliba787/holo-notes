@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(./variables.css);
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--on-primary-color);
+  margin: 0;
+  height: 100vh;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.888);
+  backdrop-filter: blur(20px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.modal {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(22, 22, 22);
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.modal textarea {
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  resize: none;
+  color: rgb(181, 181, 181);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+  outline-style: solid;
+  outline-color: rgb(33, 33, 33);
+  padding: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal .title-area {
+  width: 80%;
+  height: 10%;
+}
+
+.modal .desc-area {
+  width: 80%;
+  height: 40%;
+}
+
+.modal button {
+  width: 30%;
+  height: 20%;
+  border: none;
+  color: rgb(213, 213, 213);
+  border-radius: 6px;
+  background-color: var(--button-color);
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.modal textarea:focus {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+}
+
+.modal button:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+}
+
+.modal button:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+}
+
+.modal button:active {
+  background-color: var(--button-pressed-color);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  width: 70vw;
+  height: 95vh;
+  align-items: start;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+main .main-title {
+  position: relative;
+  margin: auto;
+  top: 5%;
+}
+
+main .add-note {
+  position: relative;
+  border: none;
+  width: 15%;
+  height: 10%;
+  top: 5%;
+  background-color: var(--button-color);
+  color: rgb(213, 213, 213);
+  font-weight: bold;
+  border-radius: 6px;
+  margin: auto;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+}
+
+main .add-note:active {
+  background-color: var(--button-pressed-color);
+}
+
+main .add-note:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+}
+
+main .add-note:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+}
+
+/* Notes Container */
+.notes-container {
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  padding: 50px;
+  align-items: start;
+  justify-content: start;
+  top: 4%;
+}

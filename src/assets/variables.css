@@ -1,0 +1,7 @@
+:root {
+  --main-background-color: rgb(255, 255, 255);
+  --primary-color: rgb(200, 200, 200);
+  --on-primary-color: rgb(50, 50, 50);
+  --button-color: rgb(40, 40, 40);
+  --button-pressed-color: rgb(12, 12, 12);
+}
