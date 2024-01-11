@@ -18,7 +18,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.888);
+  background-color: rgba(0, 0, 0, 0.585);
   backdrop-filter: blur(20px);
   z-index: 10;
   display: flex;
@@ -163,12 +163,42 @@ main .add-note:focus {
 
 /* Notes Container */
 .notes-container {
+  margin: 0 auto;
   position: relative;
   display: flex;
   width: 90%;
   height: 90%;
   padding: 50px;
   align-items: start;
-  justify-content: start;
+  justify-content: space-between;
   top: 4%;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.notes-container .note-preview {
+  width: 20%;
+  height: 40%;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  color: rgb(225, 225, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(33, 33, 33);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.notes-container .note-preview:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+}
+
+.notes-container .note-preview:focus {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 }
