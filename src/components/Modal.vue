@@ -1,5 +1,6 @@
 <template>
   <div class="modal">
+    <h2>Create Note</h2>
     <textarea
       name="title"
       id="title"
