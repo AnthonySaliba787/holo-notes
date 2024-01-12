@@ -1,0 +1,82 @@
+@import url(./main.css);
+@import url(./variables.css);
+
+/* Mobile */
+@media (max-width: 380px) and (orientation: portrait) {
+  .modal {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 500px) and (orientation: portrait) {
+  .modal {
+    width: 70%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) and (orientation: landscape) {
+  .modal {
+    width: 40%;
+    height: 75%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) and (orientation: landscape) {
+  .modal {
+    width: 40%;
+    height: 75%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 800px) and (orientation: portrait) {
+  .modal {
+    width: 60%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) and (orientation: portrait) {
+  .modal {
+    width: 50%;
+    height: 35%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) and (orientation: landscape) {
+  .modal {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) and (orientation: landscape) {
+  .modal {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 500px) {
+  .modal {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal {
+    width: 40%;
+    height: 60%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .modal {
+    width: 30%;
+    height: 40%;
+  }
+}

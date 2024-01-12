@@ -7,8 +7,8 @@
           <p>{{ note.desc }}</p>
         </div>
         <div class="button-container">
-          <button @click="note.expandNote = false">Close</button>
           <button class="deleteBtn" @click="deleteNote(note.id)">Delete</button>
+          <button @click="note.expandNote = false">Close</button>
         </div>
       </div>
     </div>
