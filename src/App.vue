@@ -2,6 +2,7 @@
   <div v-show="showModal" class="overlay">
     <Modal @addNote="addNote" />
   </div>
+  <ExpandedNote />
   <main>
     <Header />
     <Note />
@@ -14,8 +15,10 @@ import { useToast } from "vue-toastification";
 import Header from "./components/Header.vue";
 import Modal from "./components/Modal.vue";
 import Note from "./components/Note.vue";
+import ExpandedNote from "./components/ExpandedNote.vue";
 
 const showModal = ref(false);
+const expandNote = ref(false);
 const notes = ref([]);
 const newTitle = ref("");
 const newDesc = ref("");
@@ -27,6 +30,7 @@ const addNote = () => {
       id: Math.floor(Math.random() * 1000000),
       title: newTitle.value,
       desc: newDesc.value,
+      expandNote: expandNote.value,
     });
     showModal.value = false;
     newTitle.value = "";

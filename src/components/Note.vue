@@ -1,6 +1,11 @@
 <template>
   <div class="notes-container">
-    <div v-for="note in notes" :key="note.id" class="note-preview">
+    <div
+      v-for="note in notes"
+      :key="note.id"
+      class="note-preview"
+      @click="note.expandNote = true"
+    >
       <h2>{{ note.title }}</h2>
     </div>
   </div>
