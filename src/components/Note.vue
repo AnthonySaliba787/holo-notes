@@ -6,7 +6,7 @@
       class="note-preview"
       @click="note.expandNote = true"
     >
-      <h2>{{ note.title }}</h2>
+      <h3>{{ note.title }}</h3>
     </div>
   </div>
 </template>

@@ -214,7 +214,9 @@ main .add-note:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .expanded-container {
@@ -222,18 +224,39 @@ main .add-note:focus {
   height: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
+}
+
+.text-container {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-container {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .expanded-container p {
   overflow-y: auto;
   overflow-x: hidden;
+  text-align: center;
+  word-break: break-all;
 }
 
 .expanded-container button {
-  width: 10%;
-  height: 7%;
+  width: 30%;
+  height: 20%;
   border: none;
   color: rgb(213, 213, 213);
   border-radius: 6px;
@@ -243,6 +266,10 @@ main .add-note:focus {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
   transition: 0.3s ease;
   font-weight: bold;
+}
+
+.expanded-container .deleteBtn {
+  background-color: rgb(255, 0, 0);
 }
 
 .expanded-container button:hover {
@@ -255,4 +282,8 @@ main .add-note:focus {
 
 .expanded-container button:active {
   background-color: var(--button-pressed-color);
+}
+
+.expanded-container .deleteBtn:active {
+  background-color: rgb(112, 0, 0);
 }
